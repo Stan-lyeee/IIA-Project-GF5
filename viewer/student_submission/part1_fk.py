@@ -21,18 +21,32 @@ def forward_kinematics(
     - world_rotations: shape (J, 3, 3)
     - world_positions: shape (J, 3)
     """
-    # joint_count = len(joints)
-    # world_rotations = np.tile(
-    #     np.eye(3, dtype=np.float32)[None, :, :],
-    #     (joint_count, 1, 1),
-    # )
-    # world_positions = np.zeros((joint_count, 3), dtype=np.float32)
+
     joint_count = len(joints)
     world_rotations = np.zeros((joint_count, 3, 3))
     world_positions = np.zeros((joint_count, 3))
     
+    def make_topological_order(joints):
+        order = []
+        visited = [False] * joint_count
+
+        def dfs(index):
+            if visited[index]:
+                return
+            visited[index] = True
+
+            parent = joints[index].parent
+            if parent >= 0:
+                dfs(parent)
+            order.append(index)
+        
+        for index in range(joint_count):
+            dfs(index)
+        
+        return order
+
     if topological_order is None:
-        iteration_order = range(joint_count)
+        iteration_order = make_topological_order(joints)
     else:
         iteration_order = topological_order
 
