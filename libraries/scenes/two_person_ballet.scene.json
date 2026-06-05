@@ -1,0 +1,349 @@
+{
+  "format": "gf5_motion_scene",
+  "version": 3,
+  "duration": 30.0,
+  "background": {
+    "color": "#f4f1ea",
+    "image_path": "",
+    "show_grid": true,
+    "show_floor": true
+  },
+  "camera": {
+    "preset": "front_stage",
+    "target": "__origin__",
+    "height": 1.45
+  },
+  "export": {
+    "fps": 24,
+    "width": 1280,
+    "height": 720
+  },
+  "characters": [
+    {
+      "id": "host",
+      "label": "Host",
+      "color": "#2f7f7b",
+      "proxy_asset": "SMPL-24 Proxy",
+      "avatar_asset": "/Users/shangli/Desktop/gf5/IIA-Project-GF5/assets/smpl/models/basicmodel_m_lbs_10_207_0_v1.1.0.pkl",
+      "track": [
+        {
+          "clip": "Custom: HY-Motion: A ballet dancer performs a balanced ballet pose, extends one leg slightly, holds the pose, then makes a small controlled turn.",
+          "start": 0.0,
+          "duration": 6.1,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.45,
+          "blend_out": 0.45
+        },
+        {
+          "clip": "Custom: HY-Motion: A ballet dancer performs graceful arm gestures, raising both arms overhead, opening them to the sides, and making a small elegant turn.",
+          "start": 6.1,
+          "duration": 7.766667,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.45,
+          "blend_out": 0.45
+        },
+        {
+          "clip": "Custom: HY-Motion: A ballet dancer steps forward gracefully and bows to the audience with arms lowered.",
+          "start": 13.9,
+          "duration": 9.566667,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.45,
+          "blend_out": 0.45
+        },
+        {
+          "clip": "Preset: Bow",
+          "start": 23.5,
+          "duration": 2.5,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.35,
+          "blend_out": 0.35
+        },
+        {
+          "clip": "Preset: Idle stand",
+          "start": 26.0,
+          "duration": 1.0,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.35,
+          "blend_out": 0.35
+        },
+        {
+          "clip": "Preset: Two-hand wave",
+          "start": 27.0,
+          "duration": 3.0,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.45,
+          "blend_out": 0.45
+        }
+      ],
+      "root_keys": [
+        {
+          "id": "k0",
+          "time": 0.0,
+          "position": [
+            -1.2,
+            1.8,
+            0.0
+          ],
+          "facing_degrees": 90.0
+        },
+        {
+          "id": "k1",
+          "time": 13.9,
+          "position": [
+            -1.2,
+            1.8,
+            0.0
+          ],
+          "facing_degrees": 90.0
+        },
+        {
+          "id": "k2",
+          "time": 20.5,
+          "position": [
+            -0.8,
+            1.2,
+            0.0
+          ],
+          "facing_degrees": 90.0
+        },
+        {
+          "id": "k3",
+          "time": 23.5,
+          "position": [
+            -0.8,
+            1.2,
+            0.0
+          ],
+          "facing_degrees": 90.0
+        },
+        {
+          "id": "k4",
+          "time": 27.0,
+          "position": [
+            -0.9,
+            0.9,
+            0.0
+          ],
+          "facing_degrees": 0.0
+        },
+        {
+          "id": "k5",
+          "time": 30.0,
+          "position": [
+            -0.9,
+            0.9,
+            0.0
+          ],
+          "facing_degrees": 0.0
+        }
+      ],
+      "root_segments": [
+        {
+          "from": "k0",
+          "to": "k1",
+          "mode": "hold",
+          "facing": "manual"
+        },
+        {
+          "from": "k1",
+          "to": "k2",
+          "mode": "curve",
+          "facing": "manual"
+        },
+        {
+          "from": "k2",
+          "to": "k3",
+          "mode": "hold",
+          "facing": "manual"
+        },
+        {
+          "from": "k3",
+          "to": "k4",
+          "mode": "linear",
+          "facing": "manual"
+        },
+        {
+          "from": "k4",
+          "to": "k5",
+          "mode": "hold",
+          "facing": "manual"
+        }
+      ]
+    },
+    {
+      "id": "character_2",
+      "label": "Avatar 2",
+      "color": "#c04848",
+      "proxy_asset": "SMPL-24 Proxy",
+      "avatar_asset": "/Users/shangli/Desktop/gf5/IIA-Project-GF5/assets/smpl/models/basicmodel_f_lbs_10_207_0_v1.1.0.pkl",
+      "track": [
+        {
+          "clip": "Custom: HY-Motion: A ballet dancer performs a balanced ballet pose, extends one leg slightly, holds the pose, then makes a small controlled turn.",
+          "start": 0.0,
+          "duration": 6.1,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.45,
+          "blend_out": 0.45
+        },
+        {
+          "clip": "Custom: HY-Motion: A ballet dancer performs graceful arm gestures, raising both arms overhead, opening them to the sides, and making a small elegant turn.",
+          "start": 6.1,
+          "duration": 7.766667,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.45,
+          "blend_out": 0.45
+        },
+        {
+          "clip": "Custom: HY-Motion: A ballet dancer steps forward gracefully and bows to the audience with arms lowered.",
+          "start": 13.9,
+          "duration": 9.566667,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.45,
+          "blend_out": 0.45
+        },
+        {
+          "clip": "Preset: Bow",
+          "start": 23.5,
+          "duration": 2.5,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.35,
+          "blend_out": 0.35
+        },
+        {
+          "clip": "Preset: Idle stand",
+          "start": 26.0,
+          "duration": 1.0,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.35,
+          "blend_out": 0.35
+        },
+        {
+          "clip": "Preset: Two-hand wave",
+          "start": 27.0,
+          "duration": 3.0,
+          "trim_start": 0.0,
+          "trim_end": null,
+          "root_mode": "path",
+          "blend_in": 0.45,
+          "blend_out": 0.45
+        }
+      ],
+      "root_keys": [
+        {
+          "id": "k0",
+          "time": 0.0,
+          "position": [
+            1.2,
+            1.8,
+            0.0
+          ],
+          "facing_degrees": 270.0
+        },
+        {
+          "id": "k1",
+          "time": 13.9,
+          "position": [
+            1.2,
+            1.8,
+            0.0
+          ],
+          "facing_degrees": 270.0
+        },
+        {
+          "id": "k2",
+          "time": 20.5,
+          "position": [
+            0.8,
+            1.2,
+            0.0
+          ],
+          "facing_degrees": 270.0
+        },
+        {
+          "id": "k3",
+          "time": 23.5,
+          "position": [
+            0.8,
+            1.2,
+            0.0
+          ],
+          "facing_degrees": 270.0
+        },
+        {
+          "id": "k4",
+          "time": 27.0,
+          "position": [
+            0.9,
+            0.9,
+            0.0
+          ],
+          "facing_degrees": 0.0
+        },
+        {
+          "id": "k5",
+          "time": 30.0,
+          "position": [
+            0.9,
+            0.9,
+            0.0
+          ],
+          "facing_degrees": 0.0
+        }
+      ],
+      "root_segments": [
+        {
+          "from": "k0",
+          "to": "k1",
+          "mode": "hold",
+          "facing": "manual"
+        },
+        {
+          "from": "k1",
+          "to": "k2",
+          "mode": "curve",
+          "facing": "manual"
+        },
+        {
+          "from": "k2",
+          "to": "k3",
+          "mode": "hold",
+          "facing": "manual"
+        },
+        {
+          "from": "k3",
+          "to": "k4",
+          "mode": "linear",
+          "facing": "manual"
+        },
+        {
+          "from": "k4",
+          "to": "k5",
+          "mode": "hold",
+          "facing": "manual"
+        }
+      ]
+    }
+  ]
+}
